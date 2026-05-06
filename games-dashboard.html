@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Unblocked Games Hub</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <header>
+        <div class="header-content">
+            <h1>🎮 Ultimate Unblocked Games Hub</h1>
+            <p>Play Anywhere, Anytime!</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <input type="text" id="searchBar" placeholder="🔍 Search games..." class="search-input">
+        <div class="nav-buttons">
+            <button class="filter-btn" onclick="filterGames('all')">All Games</button>
+            <button class="filter-btn" onclick="filterGames('action')">Action</button>
+            <button class="filter-btn" onclick="filterGames('puzzle')">Puzzle</button>
+            <button class="filter-btn" onclick="filterGames('sports')">Sports</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="games-grid" id="gamesGrid">
+            <!-- Games will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGame()">&times;</span>
+            <iframe id="gameIframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ultimate Unblocked Games Hub | Play freely, study responsibly</p>
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html>
